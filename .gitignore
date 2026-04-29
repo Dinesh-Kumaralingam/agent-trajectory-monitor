@@ -1,0 +1,14 @@
+# Environments
+venv/
+env/
+__pycache__/
+
+# Data and Models
+*.parquet
+*.jsonl
+*.traj
+*.db
+*.pkl
+
+# OS files
+.DS_Store
