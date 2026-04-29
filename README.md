@@ -114,7 +114,7 @@ pip install -r requirements.txt
 ### 4. Download trajectory data
 
 Raw trajectory data is excluded from the repo to keep it lightweight. Download an evaluation dataset from Hugging Face — for example the SWE-bench OpenHands trajectories — and place the files into the `data/` directory:
-
+ Trajectories : https://huggingface.co/datasets/nebius/SWE-agent-trajectories/tree/main/data
 - Parquet files → `data/raw_trajectories.parquet`
 - Raw JSON `.traj` files → `data/raw_trajectories/*.traj`
 
