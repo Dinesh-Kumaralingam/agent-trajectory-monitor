@@ -93,7 +93,7 @@ This project was built end-to-end using AI development tools as a core part of t
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agent-trajectory-monitor.git
+git clone https://github.com/Dinesh-Kumaralingam/agent-trajectory-monitor.git
 cd agent-trajectory-monitor
 ```
 
