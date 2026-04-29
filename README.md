@@ -8,7 +8,7 @@ Real-time failure prediction for autonomous coding agents using time-series clas
 
 ## Overview
 
-Autonomous coding agents — SWE-agent, OpenHands, AutoGPT, Claude Code — fail in characteristic ways. They enter infinite bash loops, repeat the same failed command dozens of times, hallucinate file paths, or spiral into increasingly verbose reasoning while making zero progress. These failures waste compute, mislead users, and erode trust in agentic systems.
+Autonomous coding agents SWE-agent, OpenHands, AutoGPT, Claude Code fail in characteristic ways. They enter infinite bash loops, repeat the same failed command dozens of times, hallucinate file paths, or spiral into increasingly verbose reasoning while making zero progress. These failures waste compute, mislead users, and erode trust in agentic systems.
 
 This project instruments agent execution at the trajectory level and predicts failure events before they manifest. The system ingests raw agent logs, extracts time-series behavioral features at every step, and applies a ROCKET multivariate classifier to surface high-risk sessions in real time.
 
@@ -28,7 +28,7 @@ Trained and evaluated on 400 real OpenHands SWE-bench trajectories totaling 17,1
 | Random Baseline | 50.0% |
 | Improvement over baseline | **+18.8%** |
 
-The model favors recall on hallucination detection — catching most failures at the cost of occasional false positives. This trade-off is intentional for a circuit-breaker use case where missing a failure is more costly than interrupting a successful run.
+The model favors recall on hallucination detection catching most failures at the cost of occasional false positives. This trade-off is intentional for a circuit-breaker use case where missing a failure is more costly than interrupting a successful run.
 
 ---
 
@@ -84,7 +84,7 @@ ROCKET (Random Convolutional Kernel Transform) is purpose-built for multivariate
 **Dashboard:** Streamlit, Plotly
 **AI-Assisted Development:** Claude Code, Google Gemini
 
-This project was built end-to-end using AI development tools as a core part of the engineering workflow. Claude Code drove iterative architecture design, feature engineering decisions, and dashboard implementation. Google Gemini supported research synthesis on ROCKET methodology, time-series classification trade-offs, and SWE-bench trajectory parsing. Every line of code was reviewed and refined manually before commit — the AI tools acted as accelerators, not authors.
+This project was built end-to-end using AI development tools as a core part of the engineering workflow. Claude Code drove iterative architecture design, feature engineering decisions, and dashboard implementation. Google Gemini supported research synthesis on ROCKET methodology, time-series classification trade-offs, and SWE-bench trajectory parsing. Every line of code was reviewed and refined manually before commit the AI tools acted as accelerators, not authors.
 
 ---
 
@@ -114,7 +114,7 @@ pip install -r requirements.txt
 ### 4. Download trajectory data
 
 Raw trajectory data is excluded from the repo to keep it lightweight. Download an evaluation dataset from Hugging Face — for example the SWE-bench OpenHands trajectories — and place the files into the `data/` directory:
- Trajectories : https://huggingface.co/datasets/nebius/SWE-agent-trajectories/tree/main/data
+ 
 - Parquet files → `data/raw_trajectories.parquet`
 - Raw JSON `.traj` files → `data/raw_trajectories/*.traj`
 
