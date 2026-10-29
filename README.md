@@ -4,7 +4,7 @@ Real-time failure prediction for autonomous coding agents using time-series clas
 
 ![Dashboard Preview](assets/dashboard.png)
 
----
+----
 
 ## Overview
 
